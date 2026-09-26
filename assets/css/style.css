@@ -1,0 +1,199 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #014D50;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "微软雅黑", "Droid Sans Fallback", "黑体", sans-serif;
+}
+
+.page-content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    padding: 20px 0;
+    color: #C1C1C1;
+    font-size: 14px;
+    text-align: center;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-container h3 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #FF0004;
+    text-align: left;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.menu-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.menu-container .vid-title {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+    word-break: break-all;
+}
+
+.menu-container .vid-links {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    white-space: nowrap;
+}
+
+.menu-container .vid-links a {
+    margin-right: 10px;
+}
+
+.menu-container a {
+    color: #B7CEFF;
+    text-decoration: none;
+}
+
+.menu-container a:hover {
+    text-decoration: underline;
+}
+
+#video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-modal video {
+    width: 90%;
+    max-width: 900px;
+    max-height: 80vh;
+    background: #000;
+    outline: none;
+    display: none;
+}
+
+#video-loading {
+    position: absolute;
+    width: 90%;
+    max-width: 900px;
+    height: 60vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 10;
+}
+
+#video-loading .loading-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#video-loading .progress-track {
+    width: 60%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#video-loading .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #B7CEFF;
+    transition: width 0.1s;
+}
+
+#video-loading .cancel-btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #014D50;
+    color: #FFFFFF;
+    border: 1px solid #B7CEFF;
+    border-radius: 4px;
+}
+
+#video-modal .modal-header {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#video-modal .close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+}
+
+#video-modal .modal-footer {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#video-modal button {
+    margin: 0 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #014D50;
+    color: #FFFFFF;
+    border: 1px solid #B7CEFF;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#video-modal button:hover {
+    background: #B7CEFF;
+    color: #014D50;
+}

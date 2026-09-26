@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+<title>L7VAC</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<style>
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+@keyframes spinY {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+.float-anim {
+    display: block;
+    margin: 150px auto 30px auto;
+    max-width: 90%;
+    perspective: 1000px;
+    animation: floatUpDown 2.5s ease-in-out infinite;
+    width: fit-content;
+}
+.spin-anim {
+    display: block;
+    width: 100%;
+    animation: spinY 2.5s linear infinite;
+    transform-style: preserve-3d;
+}
+</style>
+</head>
+
+<body bgcolor="#014D50" text="#FFFFFF">
+    <div class="page-content">
+        <h1 style="text-align: center">神秘档案馆</h1>
+        <p style="text-align: center">L7VAC</p>
+
+        <hr class="divider" />
+
+        <div class="menu-container" style="text-align: center; margin-top: 50px;">
+            <p><a href="links/menu.html" style="font-size: 20px; font-weight: bold; color: #B7CEFF; text-decoration: none;">打开列表</a></p>
+        </div>
+
+        <div class="float-anim">
+            <img src="assets/pic/1.png" alt="1" class="spin-anim">
+        </div>
+    </div>
+
+    <hr class="divider" />
+    <footer>Copyright (2026) L7VAC</footer>
+</body>
+</html>
